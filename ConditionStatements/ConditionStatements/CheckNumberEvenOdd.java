@@ -1,3 +1,5 @@
+package ConditionStatements;
+
 import java.util.Scanner;
 public class CheckNumberEvenOdd {
    public static void main(String[] args) {
