@@ -1,25 +1,25 @@
 import java.util.*;
 public class MethodOfString {
     public static void main(String[] args) {
-        Scanner  sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-       // 1. Basic String Methods
+        // 1. Basic String Methods
 
-       // Method	  What it does	                Example	         Result
-       // length()	  Returns number of characters	s.length()	     11
-      //  charAt(i)	  Gets character at index	    s.charAt(1)	     'e'
-      //  isEmpty()	  Checks if length is 0      	s.isEmpty()	     false
-      //  isBlank()	  Checks empty/only spaces 	    s.isBlank()	     false
+        // Method	  What it does	                Example	         Result
+        // length()	  Returns number of characters	s.length()	     11
+        //  charAt(i)	  Gets character at index	    s.charAt(1)	     'e'
+        //  isEmpty()	  Checks if length is 0      	s.isEmpty()	     false
+        //  isBlank()	  Checks empty/only spaces 	    s.isBlank()	     false
 
 
-        String s1="abcd";
-        String s2="ABCD";
+        String s1 = "abcd";
+        String s2 = "ABCD";
         //To cheak two String containt equal or not.
         System.out.println(s1.equals(s2));
 
         //TO cheak  Two String ignoreing Case;
-        String s5="abcd";
-        String s6="ABCD";
+        String s5 = "abcd";
+        String s6 = "ABCD";
         System.out.println(s5.equalsIgnoreCase(s6));
 
         //To check wether A String is start with or end with that word.
@@ -33,20 +33,20 @@ public class MethodOfString {
         System.out.println(s5.trim());
 
         //TO replace a letter from another in String
-        String s7=s5.replace('a','z');
+        String s7 = s5.replace('a', 'z');
         //for frist letter
-        String s11= s5.replaceFirst("abc","z");
+        String s11 = s5.replaceFirst("abc", "z");
         System.out.println(s11);
 
         //Take part of String
-        String s14="Abcded";
-        System.out.println(s14.substring(2,5));
+        String s14 = "Abcded";
+        System.out.println(s14.substring(2, 5));
 
         //Sub sequence mean =continous path of String but we can drop any letter between frist letter and last
         // ac,ab,ad,af,ae=Sub Sequence.
         // ca,ea=not equal to Sub Sequence.
 
-       // 1. length()
+        // 1. length()
         //2. charAt()
         //3. equals()
         //4. equalsIgnoreCase()
@@ -67,90 +67,162 @@ public class MethodOfString {
         //19. isBlank()
         //20. compareTo()
 
-       //  Converting Other Data Types to String
-      //  String.valueOf()
-          int n = 123;
-         String ad = String.valueOf(n);
-         System.out.println(ad);
-         //  Now as is:
+        //  Converting Other Data Types to String
+        //  String.valueOf()
+        int n = 123;
+        String ad = String.valueOf(n);
+        System.out.println(ad);
+        //  Now as is:
         //  "123"
 
 
-                // =========================================================
-                // 1. length()
-                // =========================================================
-                // Input:  "Hello"
-                // Output: 5
 
-                String sa = "Hello";
+                // 1. length()
+                // USE:
+                // Returns the total number of characters in a String.
+                // SYNTAX:
+                // s.length();
+                // INPUT:
+                // "Hello"
+                // OUTPUT:
+                // 5
+
+                String sa= "Hello";
                 System.out.println(sa.length());
 
 
-                // =========================================================
+                // ========================================================
                 // 2. charAt()
                 // =========================================================
-                // Input:  "Hello", index = 1
-                // Output: e
+                // USE:
+                // Returns the character at a specific index.
+                //
+                // SYNTAX:
+                // s.charAt(index);
+                //
+                // INPUT:
+                // "Hello", index = 1
+                //
+                // OUTPUT:
+                // e
 
-                String sb= "Hello";
+                String sb = "Hello";
                 System.out.println(sb.charAt(1));
 
 
                 // =========================================================
                 // 3. equals()
                 // =========================================================
-                // Input:  "Hello", "Hello"
-                // Output: true
+                // USE:
+                // Compares two Strings based on their content.
+                //
+                // SYNTAX:
+                // s1.equals(s2);
+                //
+                // INPUT:
+                // "Hello", "Hello"
+                //
+                // OUTPUT:
+                // true
 
-                String sca= "Hello";
-                System.out.println(sc.equals("Hello"));
+                String sca = "Hello";
+                System.out.println(sca.equals("Hello"));
 
 
                 // =========================================================
                 // 4. equalsIgnoreCase()
                 // =========================================================
-                // Input:  "Hello", "hello"
-                // Output: true
+                // USE:
+                // Compares two Strings without considering uppercase
+                // and lowercase differences.
+                //
+                // SYNTAX:
+                // s1.equalsIgnoreCase(s2);
+                //
+                // INPUT:
+                // "Hello", "hello"
+                //
+                // OUTPUT:
+                // true
 
-                String sd = "Hello";
-                System.out.println(sd.equalsIgnoreCase("hello"));
+                String s4 = "Hello";
+                System.out.println(s4.equalsIgnoreCase("hello"));
 
 
                 // =========================================================
                 // 5. indexOf()
                 // =========================================================
-                // Input:  "banana", character = 'a'
-                // Output: 1
+                // USE:
+                // Finds the first occurrence of a character or String.
+                // Returns -1 if it is not found.
+                //
+                // SYNTAX:
+                // s.indexOf(character);
+                //
+                // INPUT:
+                // "banana", 'a'
+                //
+                // OUTPUT:
+                // 1
 
-                String se = "banana";
-                System.out.println(se.indexOf('a'));
+                String sd = "banana";
+                System.out.println(sd.indexOf('a'));
 
 
                 // =========================================================
                 // 6. lastIndexOf()
                 // =========================================================
-                // Input:  "banana", character = 'a'
-                // Output: 5
+                // USE:
+                // Finds the last occurrence of a character or String.
+                //
+                // SYNTAX:
+                // s.lastIndexOf(character);
+                //
+                // INPUT:
+                // "banana", 'a'
+                //
+                // OUTPUT:
+                // 5
 
-                String sf = "banana";
-                System.out.println(sf.lastIndexOf('a'));
+                String se = "banana";
+                System.out.println(se.lastIndexOf('a'));
 
 
                 // =========================================================
                 // 7. contains()
                 // =========================================================
-                // Input:  "Hello World", "World"
-                // Output: true
+                // USE:
+                // Checks whether a String contains another String.
+                // Returns true or false.
+                //
+                // SYNTAX:
+                // s.contains("text");
+                //
+                // INPUT:
+                // "Hello World", "World"
+                //
+                // OUTPUT:
+                // true
 
-                String sg = "Hello World";
-                System.out.println(sg.contains("World"));
+                String sf = "Hello World";
+                System.out.println(sf.contains("World"));
 
 
                 // =========================================================
                 // 8. substring(start)
                 // =========================================================
-                // Input:  "Hello", start = 2
-                // Output: llo
+                // USE:
+                // Extracts a part of a String from the given index
+                // to the end of the String.
+                //
+                // SYNTAX:
+                // s.substring(start);
+                //
+                // INPUT:
+                // "Hello", start = 2
+                //
+                // OUTPUT:
+                // llo
 
                 String s8 = "Hello";
                 System.out.println(s8.substring(2));
@@ -159,10 +231,20 @@ public class MethodOfString {
                 // =========================================================
                 // 9. substring(start, end)
                 // =========================================================
-                // Input:  "Hello", start = 1, end = 4
-                // Output: ell
+                // USE:
+                // Extracts characters between start and end indexes.
                 //
-                // NOTE: End index is excluded.
+                // IMPORTANT:
+                // The end index is NOT included.
+                //
+                // SYNTAX:
+                // s.substring(start, end);
+                //
+                // INPUT:
+                // "Hello", start = 1, end = 4
+                //
+                // OUTPUT:
+                // ell
 
                 String s9 = "Hello";
                 System.out.println(s9.substring(1, 4));
@@ -171,8 +253,17 @@ public class MethodOfString {
                 // =========================================================
                 // 10. toUpperCase()
                 // =========================================================
-                // Input:  "hello"
-                // Output: HELLO
+                // USE:
+                // Converts all letters of a String to uppercase.
+                //
+                // SYNTAX:
+                // s.toUpperCase();
+                //
+                // INPUT:
+                // "hello"
+                //
+                // OUTPUT:
+                // HELLO
 
                 String s10 = "hello";
                 System.out.println(s10.toUpperCase());
@@ -181,18 +272,36 @@ public class MethodOfString {
                 // =========================================================
                 // 11. toLowerCase()
                 // =========================================================
-                // Input:  "HELLO"
-                // Output: hello
+                // USE:
+                // Converts all letters of a String to lowercase.
+                //
+                // SYNTAX:
+                // s.toLowerCase();
+                //
+                // INPUT:
+                // "HELLO"
+                //
+                // OUTPUT:
+                // hello
 
-                String s111= "HELLO";
-                System.out.println(s111.toLowerCase());
+                String sg = "HELLO";
+                System.out.println(sg.toLowerCase());
 
 
                 // =========================================================
                 // 12. trim()
                 // =========================================================
-                // Input:  "   Hello   "
-                // Output: "Hello"
+                // USE:
+                // Removes spaces from the beginning and end of a String.
+                //
+                // SYNTAX:
+                // s.trim();
+                //
+                // INPUT:
+                // "   Hello   "
+                //
+                // OUTPUT:
+                // Hello
 
                 String s12 = "   Hello   ";
                 System.out.println(s12.trim());
@@ -201,8 +310,18 @@ public class MethodOfString {
                 // =========================================================
                 // 13. strip()
                 // =========================================================
-                // Input:  "   Hello   "
-                // Output: "Hello"
+                // USE:
+                // Removes whitespace from the beginning and end.
+                // It handles Unicode whitespace better than trim().
+                //
+                // SYNTAX:
+                // s.strip();
+                //
+                // INPUT:
+                // "   Hello   "
+                //
+                // OUTPUT:
+                // Hello
 
                 String s13 = "   Hello   ";
                 System.out.println(s13.strip());
@@ -211,18 +330,36 @@ public class MethodOfString {
                 // =========================================================
                 // 14. replace()
                 // =========================================================
-                // Input:  "banana", replace 'a' with 'x'
-                // Output: bxnxnx
+                // USE:
+                // Replaces all occurrences of a character or String.
+                //
+                // SYNTAX:
+                // s.replace(old, new);
+                //
+                // INPUT:
+                // "banana", replace 'a' with 'x'
+                //
+                // OUTPUT:
+                // bxnxnx
 
-                String s141 = "banana";
-                System.out.println(s141.replace('a', 'x'));
+                String sh = "banana";
+                System.out.println(sh.replace('a', 'x'));
 
 
                 // =========================================================
                 // 15. replaceFirst()
                 // =========================================================
-                // Input:  "banana", replace first "a" with "x"
-                // Output: bxnana
+                // USE:
+                // Replaces only the FIRST matching occurrence.
+                //
+                // SYNTAX:
+                // s.replaceFirst(old, new);
+                //
+                // INPUT:
+                // "banana", replace first "a" with "x"
+                //
+                // OUTPUT:
+                // bxnana
 
                 String s15 = "banana";
                 System.out.println(s15.replaceFirst("a", "x"));
@@ -231,8 +368,17 @@ public class MethodOfString {
                 // =========================================================
                 // 16. replaceAll()
                 // =========================================================
-                // Input:  "a1b2c3", remove all digits
-                // Output: abc
+                // USE:
+                // Replaces all matching parts using Regular Expression.
+                //
+                // SYNTAX:
+                // s.replaceAll(regex, replacement);
+                //
+                // INPUT:
+                // "a1b2c3", remove digits
+                //
+                // OUTPUT:
+                // abc
 
                 String s16 = "a1b2c3";
                 System.out.println(s16.replaceAll("[0-9]", ""));
@@ -241,8 +387,17 @@ public class MethodOfString {
                 // =========================================================
                 // 17. split()
                 // =========================================================
-                // Input:  "Apple,Banana,Mango"
-                // Output:
+                // USE:
+                // Splits a String into multiple parts and returns
+                // them as a String array.
+                //
+                // SYNTAX:
+                // String[] arr = s.split("delimiter");
+                //
+                // INPUT:
+                // "Apple,Banana,Mango"
+                //
+                // OUTPUT:
                 // Apple
                 // Banana
                 // Mango
@@ -258,8 +413,18 @@ public class MethodOfString {
                 // =========================================================
                 // 18. toCharArray()
                 // =========================================================
-                // Input:  "Hello"
-                // Output: H e l l o
+                // USE:
+                // Converts a String into a character array (char[]).
+                // Very useful for String/DSA problems.
+                //
+                // SYNTAX:
+                // char[] arr = s.toCharArray();
+                //
+                // INPUT:
+                // "Hello"
+                //
+                // OUTPUT:
+                // H e l l o
 
                 String s18 = "Hello";
                 char[] chars = s18.toCharArray();
@@ -273,8 +438,17 @@ public class MethodOfString {
                 // =========================================================
                 // 19. startsWith()
                 // =========================================================
-                // Input:  "Hello World", "Hello"
-                // Output: true
+                // USE:
+                // Checks whether a String starts with a specific String.
+                //
+                // SYNTAX:
+                // s.startsWith("text");
+                //
+                // INPUT:
+                // "Hello World", "Hello"
+                //
+                // OUTPUT:
+                // true
 
                 String s19 = "Hello World";
                 System.out.println(s19.startsWith("Hello"));
@@ -283,8 +457,17 @@ public class MethodOfString {
                 // =========================================================
                 // 20. endsWith()
                 // =========================================================
-                // Input:  "Hello World", "World"
-                // Output: true
+                // USE:
+                // Checks whether a String ends with a specific String.
+                //
+                // SYNTAX:
+                // s.endsWith("text");
+                //
+                // INPUT:
+                // "Hello World", "World"
+                //
+                // OUTPUT:
+                // true
 
                 String s20 = "Hello World";
                 System.out.println(s20.endsWith("World"));
@@ -293,8 +476,17 @@ public class MethodOfString {
                 // =========================================================
                 // 21. isEmpty()
                 // =========================================================
-                // Input:  ""
-                // Output: true
+                // USE:
+                // Checks whether the String has zero characters.
+                //
+                // SYNTAX:
+                // s.isEmpty();
+                //
+                // INPUT:
+                // ""
+                //
+                // OUTPUT:
+                // true
 
                 String s21 = "";
                 System.out.println(s21.isEmpty());
@@ -303,8 +495,18 @@ public class MethodOfString {
                 // =========================================================
                 // 22. isBlank()
                 // =========================================================
-                // Input:  "   "
-                // Output: true
+                // USE:
+                // Checks whether a String is empty or contains only
+                // whitespace characters.
+                //
+                // SYNTAX:
+                // s.isBlank();
+                //
+                // INPUT:
+                // "   "
+                //
+                // OUTPUT:
+                // true
 
                 String s22 = "   ";
                 System.out.println(s22.isBlank());
@@ -313,8 +515,17 @@ public class MethodOfString {
                 // =========================================================
                 // 23. concat()
                 // =========================================================
-                // Input:  "Hello ", "Java"
-                // Output: Hello Java
+                // USE:
+                // Joins one String to the end of another String.
+                //
+                // SYNTAX:
+                // s1.concat(s2);
+                //
+                // INPUT:
+                // "Hello ", "Java"
+                //
+                // OUTPUT:
+                // Hello Java
 
                 String s23 = "Hello ";
                 System.out.println(s23.concat("Java"));
@@ -323,10 +534,19 @@ public class MethodOfString {
                 // =========================================================
                 // 24. compareTo()
                 // =========================================================
-                // Input:  "abc", "abc"
-                // Output: 0
+                // USE:
+                // Compares two Strings lexicographically.
                 //
-                // 0       -> Strings are equal
+                // SYNTAX:
+                // s1.compareTo(s2);
+                //
+                // INPUT:
+                // "abc", "abc"
+                //
+                // OUTPUT:
+                // 0
+                //
+                // 0        -> Strings are equal
                 // Negative -> First String comes before second
                 // Positive -> First String comes after second
 
@@ -337,8 +557,18 @@ public class MethodOfString {
                 // =========================================================
                 // 25. compareToIgnoreCase()
                 // =========================================================
-                // Input:  "ABC", "abc"
-                // Output: 0
+                // USE:
+                // Compares two Strings lexicographically without considering
+                // uppercase/lowercase differences.
+                //
+                // SYNTAX:
+                // s1.compareToIgnoreCase(s2);
+                //
+                // INPUT:
+                // "ABC", "abc"
+                //
+                // OUTPUT:
+                // 0
 
                 String s25 = "ABC";
                 System.out.println(s25.compareToIgnoreCase("abc"));
@@ -347,8 +577,17 @@ public class MethodOfString {
                 // =========================================================
                 // 26. String.valueOf()
                 // =========================================================
-                // Input:  123
-                // Output: "123"
+                // USE:
+                // Converts a primitive value or object into a String.
+                //
+                // SYNTAX:
+                // String.valueOf(value);
+                //
+                // INPUT:
+                // 123
+                //
+                // OUTPUT:
+                // "123"
 
                 int number = 123;
                 String s26 = String.valueOf(number);
@@ -358,8 +597,17 @@ public class MethodOfString {
                 // =========================================================
                 // 27. String.join()
                 // =========================================================
-                // Input:  "10", "20", "30" with "-"
-                // Output: 10-20-30
+                // USE:
+                // Joins multiple Strings using a delimiter.
+                //
+                // SYNTAX:
+                // String.join(delimiter, values);
+                //
+                // INPUT:
+                // "10", "20", "30", delimiter = "-"
+                //
+                // OUTPUT:
+                // 10-20-30
 
                 String result = String.join("-", "10", "20", "30");
                 System.out.println(result);
@@ -368,11 +616,24 @@ public class MethodOfString {
                 // =========================================================
                 // 28. repeat()
                 // =========================================================
-                // Input:  "Hi", repeat = 3
-                // Output: HiHiHi
+                // USE:
+                // Repeats a String a specified number of times.
+                //
+                // SYNTAX:
+                // s.repeat(number);
+                //
+                // INPUT:
+                // "Hi", repeat = 3
+                //
+                // OUTPUT:
+                // HiHiHi
 
                 String s28 = "Hi";
                 System.out.println(s28.repeat(3));
-
-    }
+            }
 }
+
+
+
+
+
