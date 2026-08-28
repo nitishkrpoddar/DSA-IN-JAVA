@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.*;
 public class BasicsOfString {
     public static void main(String[] args) {
@@ -37,32 +36,7 @@ public class BasicsOfString {
         //What is Heap?
         //The Heap is the main memory area where java object are created.
 
-       //To cheak two String containt equal or not.
-       System.out.println(s1.equals(s2));
 
-        //TO cheak  Two String ignoreing Case;
-        String s5="abcd";
-        String s6="ABCD";
-        System.out.println(s5.equalsIgnoreCase(s6));
 
-          //To check wether A String is start with or end with that word.
-         System.out.println(s5.startsWith(s6));
-         System.out.println(s5.endsWith(s6));
-
-         //TO check that wether String contains that word or not .
-        System.out.println(s5.contains(s6));
-
-        //TO remove space from String from Starting and endinfd
-        System.out.println(s5.trim());
-
-        //TO replace a letter from another in String
-        String s7=s5.replace('a','z');
-       //for frist letter
-       String s11= s5.replaceFirst("abc","z");
-        System.out.println(s11);
-
-        //Take part of String
-        String s14="Abcded";
-        System.out.println(s14.substring(2,5));
     }
 }
